@@ -1,0 +1,578 @@
+/*-----General styling for projects page-----*/
+.projects{
+    background-color: #282d31;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.projects-title{
+    font-size: 3rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: #A55278;
+    font-family: "Libre Baskerville", sans-serif;
+    font-weight: 500;
+    border-left: 1px solid white;
+    padding-left: 30px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.projects-paragraph{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: #afafaf;
+    font-family: "Montserrat", sans-serif;
+    line-height: 45px;
+}
+
+.see-other {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    padding: 20px;
+    font-size: 2rem;
+    margin-top: 100px;
+    border-radius: 50px;
+    width: 27vw;
+    background-color: #A55278;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-weight: 400;
+}
+
+.see-other::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+    transition: left 0.5s;
+}
+
+.see-other:hover::before {
+    left: 0;
+}
+
+/*-----Styling for single project component-----*/
+.project{
+    height: 500px;
+    background-color: #32393d;
+    display: flex;
+    margin-bottom: 40px;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project img{
+    flex: 2;
+    object-fit:cover; 
+    max-width: 50%;
+}
+
+.project-title{
+    align-self: center;
+    font-size: 2.7rem;
+    color: white;
+    font-family: "Libre Baskerville", sans-serif;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.project-info{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.project-info-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 70px; 
+}
+
+.project-type, .project-location, .project-date {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.project-icon, .location-icon, .time-icon{
+    color: white;
+    font-size: 2.5vw;
+    width: auto;
+    margin-bottom: 30px;
+}
+
+.project-info-container p{
+    font-size: 1.8rem;
+    color: #afafaf;
+    font-family: "Montserrat", sans-serif;
+}
+
+.view-details-button{
+    background-color: #A55278;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    padding: 15px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 30px; 
+    right: 0px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    width: 20vw;
+    border: none;
+    overflow: hidden;
+}
+
+.view-details-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+    transition: left 0.5s;
+}
+
+.view-details-button:hover::before {
+    left: 0;
+}
+
+/*-----Media query for extra large devices (1400px to 1700px)-----*/
+@media(min-width: 1401px) and (max-width: 1700px){
+    .project{
+        height: 400px;
+        width: 65vw;
+    }
+
+    .project-title{
+        padding-top: 30px;
+    }
+
+    .view-details-button{
+        width: 25vw;
+    }   
+
+    .see-other{
+        width: 35vw;
+    }
+}
+
+/*-----(1200px to 1400px)-----*/
+@media(min-width: 1201px) and (max-width: 1400px){
+    .project{
+        height: 400px;
+        width: 70vw;
+    }
+    
+    .project-title{
+        font-size: 2.6rem;
+        padding-top: 30px;
+        margin-bottom: 10px;
+        padding-bottom: 0;
+    }
+    
+    .project-info-container {
+        justify-content: space-evenly;
+        gap: 40px;
+        padding-left: 20px;
+        padding-right: 20px;  
+    }
+    
+    .project-icon, .location-icon, .time-icon{
+        margin-bottom: 30px;
+    }
+    
+    .project-info-container p{
+        font-size: 1.8rem;
+    }
+    
+    .view-details-button{
+        font-size: 1.7rem;
+        padding: 2%;
+        position: absolute;
+        bottom: 10%; 
+        width: 30vw;
+        border: none;
+        overflow: hidden;
+    }  
+
+    .see-other{
+        width: 40vw;
+    }
+}
+
+@media(min-width: 993px) and (max-width: 1200px){
+    .project{
+        height: 400px;
+        background-color: #32393d;
+        display: flex;
+        margin-bottom: 2%;
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .project img{
+        flex: 2;
+        object-fit:cover; 
+        max-width: 50%;
+        height: 100%;
+    }
+    
+    .project-title{
+        align-self: center;
+        font-size: 2.6rem;
+        color: white;
+        font-family: "Libre Baskerville", sans-serif;
+        font-weight: 500;
+        padding-top: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .project-info{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+    }
+    
+    .project-info-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px  
+    }
+    
+    .project-icon, .location-icon, .time-icon{
+        color: white;
+        font-size: 2.5vw;
+        width: auto;
+        margin-bottom: 2vh;
+    }
+    
+    .project-info-container p{
+        font-size: 1.8rem;
+        color: #afafaf;
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    .view-details-button{
+        font-size: 1.7rem;
+        padding: 2%;
+        cursor: pointer;
+        position: absolute;
+        bottom: 10%; 
+        right: 0px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        width: 30vw;
+        border: none;
+        overflow: hidden;
+    } 
+    
+    .see-other{
+        width: 45vw;
+    }
+}
+
+/*-----Media query for medium devices (576px to 992px)-----*/
+@media(min-width: 577px) and (max-width: 992px){
+    .projects-title{
+        font-size: 2.3rem;
+        margin-left: 10%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    .projects-paragraph{
+        font-size: 1.4rem;
+        line-height: 35px;
+        margin-bottom: 20px;
+        margin-left: 10%;
+    }
+
+    .project{
+        height: 650px;
+        flex-direction: column;
+        margin-bottom: 30px;
+        width: auto;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .project img{
+        max-width: 100%;
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .project-title{
+        font-size: 2rem;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .project-info-container{
+        padding: 0;
+        margin: 0;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        justify-content: space-evenly ;
+    }
+
+    .project-info-container p{
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .project-icon, .location-icon, .time-icon{
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .project-info{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .project-icon, .location-icon, .time-icon{
+        font-size: 2.5rem;
+    }
+    
+    .view-details-button{
+        font-size: 1.4rem;
+        bottom: 0;
+        position: absolute;
+        align-self: center;
+        width: 100%;
+        border-radius: 0;
+        margin-top: 10px;
+    }
+
+    .see-other {
+        position: static;
+        width: 70vw;
+        margin: auto;
+        padding: 5px;
+        font-size: 1.7rem;
+        margin-bottom: 1vh;
+    }
+
+    .see-other::before{
+        display: none;
+    }
+}
+
+/*-----Media query for small devices (390px to 576px)-----*/
+@media (min-width:391px) and (max-width:576px){
+    .projects-title{
+        font-size: 2rem;
+        margin-left: 10%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    .projects-paragraph{
+        font-size: 1rem;
+        line-height: 30px;
+        margin-bottom: 20px;
+        margin-left: 10%;
+    }
+
+    .project{
+        height: 500px;
+        flex-direction: column;
+        margin-bottom: 30px;
+        width: auto;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .project img{
+        max-width: 100%;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .project-title{
+        font-size: 1.6rem;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .project-info{
+        height: 100px;
+    }
+
+    .project-info-container{
+        padding: 0;
+        margin: 0;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        justify-content: space-evenly ;
+        gap: 10px;
+    }
+
+    .project-info-container p{
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .project-icon, .location-icon, .time-icon{
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .project-info{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .view-details-button{
+        font-size: 1rem;
+        bottom: 0;
+        position: absolute;
+        align-self: center;
+        width: 100%;
+        border-radius: 0;
+        margin-top: 10px;
+
+    }
+
+    .see-other {
+        position: static;
+        width: 70vw;
+        margin: auto;
+        padding: 5px;
+        font-size: 1.4rem;
+        margin-bottom: 1vh;
+    }
+
+    .see-other::before{
+        display: none;
+    }
+}
+
+/*-----Media query for mobile deivces and smaller-----*/
+@media(max-width: 390px){
+    .projects-title{
+        font-size: 2rem;
+        margin-left: 10%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    .projects-paragraph{
+        font-size: 1rem;
+        line-height: 25px;
+        margin-bottom: 20px;
+        margin-left: 10%;
+    }
+
+    .project{
+        height: 450px;
+        flex-direction: column;
+        margin-bottom: 30px;
+        width: auto;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .project img{
+        max-width: 100%;
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .project-title{
+        font-size: 1.6rem;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .project-info{
+        height: 100px;
+    }
+
+    .project-info-container{
+        padding: 0;
+        margin: 0;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        justify-content: space-evenly ;
+        gap: 10px;
+    }
+
+    .project-info-container p{
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .project-icon, .location-icon, .time-icon{
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .project-info{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .view-details-button{
+        font-size: 1rem;
+        bottom: 0;
+        position: absolute;
+        align-self: center;
+        width: 100%;
+        border-radius: 0;
+        margin-top: 10px;
+
+    }
+
+    .see-other {
+        position: static;
+        width: 70vw;
+        margin: auto;
+        padding: 5px;
+        font-size: 1.4rem;
+        margin-bottom: 1vh;
+    }
+
+    .see-other::before{
+        display: none;
+    }
+}

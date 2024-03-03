@@ -1,0 +1,342 @@
+/*-----Featured products styling-----*/
+.featured-projects{
+   height: 900px;
+   background-color: #282d31;
+   padding-top: 50px;
+   padding-bottom: 40px;
+}
+
+.featured-projects h1{
+   margin-left: 15%;
+   font-family: "Libre Baskerville", sans-serif;
+   color: #A55278;
+   border-left: 1px solid white;
+   padding-left: 30px;
+   font-size: 3rem;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   margin-bottom: 40px;
+}
+
+.featured-projects-container{
+   display: flex;
+   flex-direction: row;
+   margin-left: 15%;
+   margin-right: 15%;
+   justify-content: space-between;
+}
+
+/*-----Single project styling-----*/
+.featured-project{
+   height: 600px;
+   width: 20vw;
+}
+
+.featured-project-img{
+   height: 450px;
+   position: relative;
+}
+
+.featured-project-img img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 15px;
+   display: block;
+   position: relative;
+}
+
+.featured-project-info{
+   height: 200px;
+}
+
+.featured-project-info h2{
+   font-size: 2rem;
+   font-family: "Libre Baskerville", sans-serif;
+   margin-top: 15px;
+   padding: 10px;
+   color: white;
+   font-weight: 600;
+}
+
+.featured-project-info p{
+   font-size: 1.3rem;
+   font-family: "Montserrat", sans-serif;
+   padding-left: 10px;
+   color: white;
+   line-height: 40px;
+   font-weight: 200;
+}
+
+.imgOverlay {
+   position: absolute;
+   bottom: 100%;
+   left: 0;
+   right: 0;
+   background: rgba(0, 0, 0, 0.6);
+   overflow: hidden;
+   width: 100%;
+   height:0;
+   transition: .5s ease;
+   border-radius: 15px;
+ }
+ 
+ .featured-project-img:hover .imgOverlay {
+   bottom: 0;
+   height: 100%;
+ }
+ 
+ .text {
+   font-family: "Montserrat", sans-serif;
+   color: white;
+   font-size: 25px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   text-align: center;
+ }
+
+ .text:hover{
+   cursor: pointer;
+ }
+
+ @media(min-width: 1401px) and (max-width: 1700px){
+   .featured-projects{
+      height: 800px;
+   }
+
+   .featured-projects h1{
+      font-size: 2.8rem;
+   }
+   .featured-project{
+      height: 500px;
+   }
+
+   .featured-project-img{
+      height: 350px;
+   }
+
+   .featured-project-info h2{
+      font-size: 1.8rem;
+   }
+   
+   .featured-project-info p{
+      font-size: 1.1rem;
+      line-height: 30px;
+   }
+ }
+
+ @media(min-width: 1201px) and (max-width: 1400px){
+   .featured-projects{
+      height: 750px;
+   }
+
+   .featured-projects h1{
+      font-size: 2.7rem;
+   }
+   .featured-project{
+      height: 400px;
+   }
+
+   .featured-project-img{
+      height: 300px;
+   }
+
+   .featured-project-info h2{
+      font-size: 1.8rem;
+      padding-top: 5px;
+   }
+   
+   .featured-project-info p{
+      font-size: 1.1rem;
+      line-height: 30px;
+   }
+ }
+
+ @media(min-width: 993px) and (max-width: 1200px){
+   .featured-projects{
+      height: 700px;
+   }
+
+   .featured-projects h1{
+      font-size: 2.6rem;
+   }
+   .featured-project{
+      height: 400px;
+   }
+
+   .featured-project-img{
+      height: 250px;
+   }
+
+   .featured-project-info h2{
+      font-size: 1.8rem;
+      padding-top: 5px;
+   }
+   
+   .featured-project-info p{
+      font-size: 1rem;
+      line-height: 25px;
+   }
+ }
+
+ @media(min-width: 769px) and (max-width: 992px){
+   .featured-projects-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .featured-projects{
+      height: 1100px;
+   }
+
+   .featured-projects h1{
+      font-size: 2.3rem;
+      
+   }
+
+   .featured-project{
+      height: 300px;
+      width: 50vw;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 40px;
+   }
+
+   .featured-project-img{
+      height: 250px;
+   }
+
+   .featured-project-info h2{
+      font-size: 1.6rem;
+      padding-top: 0px;
+   }
+   
+   .featured-project-info p{
+      display: none;
+   }
+ }
+
+ @media(min-width: 577px) and (max-width: 768px){
+   .featured-projects-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .featured-projects{
+      height: 1100px;
+   }
+
+   .featured-projects h1{
+      font-size: 2.1rem;   
+   }
+
+   .featured-project{
+      height: 300px;
+      width: 60vw;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 30px;
+   }
+
+   .featured-project-img{
+      height: 250px;
+   }
+
+   .featured-project-info h2{
+      font-size: 1.4rem;
+      padding-top: 0px;
+   }
+   
+   .featured-project-info p{
+      display: none;
+   }
+ }
+
+ @media(min-width: 391px) and (max-width: 576px){
+   .featured-projects-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .featured-projects{
+      height: 1100px;
+   }
+
+   .featured-projects h1{
+      font-size: 1.9rem;   
+   }
+
+   .featured-project{
+      height: 300px;
+      width: 70vw;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 30px;
+   }
+
+   .featured-project-img{
+      height: 250px;
+   }
+
+   .featured-project-info h2{
+      font-size: 1.2rem;
+      padding-top: 0px;
+   }
+   
+   .featured-project-info p{
+      display: none;
+   }
+ }
+
+ @media (max-width: 390px){
+   .featured-projects-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .featured-projects{
+      height: 1000px;
+   }
+
+   .featured-projects h1{
+      font-size: 1.6rem;  
+      padding-left: 16px; 
+   }
+
+   .featured-project{
+      height: 300px;
+      width: 70vw;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 0;
+   }
+
+   .featured-project-img{
+      height: 220px;
+   }
+
+   .featured-project-info h2{
+      font-size: 1.2rem;
+      padding-top: 0px;
+   }
+   
+   .featured-project-info p{
+      display: none;
+   }
+
+   .featured-project-info{
+      height: 60px;
+   }
+ }

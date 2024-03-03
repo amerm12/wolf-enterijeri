@@ -1,0 +1,226 @@
+.footer{
+    background-color: #121213;
+}
+
+.footer-cards{
+    margin-right: 15%;
+    margin-left: 15%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10vw;
+    padding: 50px 0 50px 0;
+}
+
+.footer p{
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(202, 202, 202);
+    text-align: center;
+}
+
+.footer-left img{
+    width: 150%;
+}
+
+.footer-middle{
+    text-align: center;
+}
+
+.footer h2{
+    font-size: 1.7rem;
+    font-family: "Libre Baskerville", sans-serif;
+    color: #A55278;
+    padding-bottom: 20px;
+}
+
+.fb-icon{
+    font-size: 3rem;
+    color: white;
+}
+
+.fb-icon:hover{
+    color:#A55278;
+}
+
+.footer-right{
+    text-align: center;
+}
+
+.footer-right p{
+    font-family: "Montserrat", sans-serif;
+    line-height: 30px;
+    text-align: center;
+}
+
+.rights{
+    margin-right: 15%;
+    margin-left: 15%;
+    border-top: 1px solid rgba(255,255,255,0.10);
+    text-align: center;
+}
+
+.rights p{
+    padding: 15px 0 15px 0;
+    margin: 0;
+    color: #adadad;
+    font-size: 0.9rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.rights a{
+    color: #adadad;
+}
+
+@media(min-width: 1401px) and (max-width: 1700px){
+    .footer-left img{
+        width: 120%;
+    }
+
+    .footer h2{
+        font-size: 1.5rem;
+    }
+
+    .fb-icon{
+        font-size: 2.5rem;
+    }
+}
+  
+  @media(min-width: 993px) and (max-width: 1400px){
+    .footer-cards{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .footer-left img{
+        width: 110%;
+    }
+
+    .footer h2{
+        font-size: 1.5rem;
+    }
+
+    .footer-cards{
+        gap: 7vw;
+    }
+
+    .rights{
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+  }
+  
+  @media(min-width: 577px) and (max-width: 992px){
+    .footer-cards{
+        margin-right: 15%;
+        margin-left: 15%;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vw;
+        padding-bottom: 20px;
+    }
+
+    .footer-left img{
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
+    .footer h2{
+        font-size: 1.4rem;
+        padding-bottom: 10px;
+    }
+
+    .footer-right p{
+        font-size: 0.8rem;
+    }
+
+    .fb-icon{
+        font-size: 2rem;
+    }
+
+    .rights p{
+        font-size: 0.7rem;
+    }
+
+    .rights{
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+}
+  
+  @media (min-width: 391px) and (max-width: 576px){
+    .footer-cards{
+        margin-right: 15%;
+        margin-left: 15%;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vw;
+        padding-bottom: 15px;
+    }
+
+    .footer-left img{
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
+    .footer h2{
+        font-size: 1.4rem;
+        padding-bottom: 10px;
+    }
+
+    .footer-right p{
+        font-size: 0.8rem;
+    }
+
+    .fb-icon{
+        font-size: 2rem;
+    }
+
+    .rights p{
+        font-size: 0.7rem;
+    }
+
+    .rights{
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+  }
+  
+  @media (max-width: 390px){
+    .footer-cards{
+        margin-right: 15%;
+        margin-left: 15%;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vw;
+        padding-bottom: 15px;
+    }
+
+    .footer-left img{
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
+    .footer h2{
+        font-size: 1.4rem;
+        padding-bottom: 10px;
+    }
+
+    .footer-right p{
+        font-size: 0.8rem;
+    }
+
+    .fb-icon{
+        font-size: 2rem;
+    }
+
+    .rights p{
+        font-size: 0.7rem;
+    }
+
+    .rights{
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+  }
