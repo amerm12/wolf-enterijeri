@@ -20,10 +20,6 @@ function FeaturedProject(props) {
                     <p className="text" onClick={() => viewDetails(props.projectID)}>Pogledaj Detaljnije</p>
                 </div>
             </div>
-            <div className="featured-project-info">
-                <h2>{props.title}</h2>
-                <p>{props.description}</p>
-            </div>
         </div>
     );
 }

@@ -13,25 +13,16 @@ function featuredProjects(){
             <FeaturedProject
                 imageSrc={projectOneImg}
                 imageAlt="projekt 1"
-                title="Villa"
-                description="Ova vila oslikava eleganciju i luksuz kroz pažljivo odabrane detalje, stvarajući prostor koji 
-                će zadovoljiti najistančanije ukuse i pružiti ugodan boravak."
                 projectID = "proj3"
             />
             <FeaturedProject
                 imageSrc={projectTwoImg}
                 imageAlt="projekt 2"
-                title="Stan"
-                description="Kreativni pristup i funkcionalni dizajn - naši stambeni projekti prilagođavaju se vašem stilu
-                i potrebama, stvarajući prostor u kojem se osjećate udobno u svakom trenutku."
                 projectID = "proj4"
             />
             <FeaturedProject
                 imageSrc={projectThreeImg}
                 imageAlt="projekt 3"
-                title="Hotel"
-                description="Naš dizajn unaprijedio je ovaj hotel s elegancijom i funkcionalnošću, stvarajući prostor koji 
-                goste oduševljava. Svaka soba odražava našu posvećenost detaljima, čineći boravak nezaboravnim."
                 projectID = "proj5"
             />
             </div>

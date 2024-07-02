@@ -1,9 +1,15 @@
 .about-us h1{
-    font-family: "Libre Baskerville", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
     margin-left: 15%;
     padding-bottom: 20px;
     padding-top: 50px;
     font-size: 3rem;
+
+    border-left: 1px solid black;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .about-us p{
@@ -34,6 +40,7 @@
 
 .about-info{
     margin-left: 15%;
+    text-align: center;
 }
 
 .map-container{
@@ -41,11 +48,6 @@
     padding: 50px 0 50px 0;
     height: 700px; 
     width: 1000px;
-}
-
-.about-container h2 span{
-    font-weight: bold;
-    color: #A55278;
 }
 
 @media (max-width: 2250px) {

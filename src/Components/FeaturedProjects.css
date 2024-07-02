@@ -1,6 +1,6 @@
 /*-----Featured products styling-----*/
 .featured-projects{
-   height: 900px;
+   height: 700px;
    background-color: #282d31;
    padding-top: 50px;
    padding-bottom: 40px;
@@ -8,8 +8,9 @@
 
 .featured-projects h1{
    margin-left: 15%;
-   font-family: "Libre Baskerville", sans-serif;
-   color: #A55278;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 500;
+   color: white;
    border-left: 1px solid white;
    padding-left: 30px;
    font-size: 3rem;

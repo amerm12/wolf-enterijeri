@@ -21,9 +21,9 @@ const About = () => {
             </p>
             <div className = "about-container">
                 <div className = "about-info">
-                    <h2><span>Adresa:</span> Tvornička 6, Sarajevo</h2>
-                    <h2><span>Email:</span> wolfenterijeri@gmail.com</h2>
-                    <h2><span>Broj telefona:</span> 033 628-925</h2>
+                    <h2>Tvornička 6, Sarajevo</h2>
+                    <h2>wolfenterijeri@gmail.com</h2>
+                    <h2>033 628-925</h2>
                 </div>
                 
                 <MapLocation/>

@@ -9,18 +9,20 @@
 
 .slider-image h2{
   margin-left: 15%;
-  color: #A55278;
+  color: white;
   font-size: 3rem;
   margin-top: 120px;
-  font-weight: bolder;
+  /*font-weight: bolder;*/
+  font-weight: 600;
   font-family: "Montserrat", sans-serif;
   margin-right: auto;
-  padding-bottom: 10px;
+  padding-bottom: 0;
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
 
 }
 
 .slider-image p{
+  margin-top: 0;
   margin-left: 15%;
   color: white;
   font-size: 2rem;

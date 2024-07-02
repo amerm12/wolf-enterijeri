@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './ProjectDetails.css';
 import { useLocation } from 'react-router-dom';
 import { useSwipeable } from 'react-swipeable';
+import ImageGallery from "react-image-gallery";
+import 'react-image-gallery/styles/css/image-gallery.css';
 
 function ProjectDetails() {
     
@@ -57,7 +59,7 @@ function ProjectDetails() {
             images = [];
     }
 
-    const [lightboxOpen, setLightboxOpen] = useState(false);
+    /*const [lightboxOpen, setLightboxOpen] = useState(false);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     useEffect(() => {
@@ -95,11 +97,12 @@ function ProjectDetails() {
         onSwipedLeft: goToNextImage,
         onSwipedRight: goToPreviousImage,
         preventScrollOnSwipe: true  
-    });
+    });*/
 
     return (
-        <div className="project-details" {...handlers}>
-            <div className="img-container">
+        <div className="project-details">
+            <ImageGallery items={images} />;
+            {/*<div className="img-container">
                 {images.map((image, index) => (
                     <img
                         key={index}
@@ -128,7 +131,7 @@ function ProjectDetails() {
                         &#10095;
                     </button>
                 </div>
-            )}
+            )}*/}
         </div>
     );
 }

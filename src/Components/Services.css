@@ -8,14 +8,15 @@
 
 .services h1{
     margin-left: 15%;
-    font-family: "Libre Baskerville", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 3rem;
     padding-top: 10px;
     padding-bottom: 10px;
     border-left: 1px solid black;
     padding-left: 30px;
     margin-bottom: 50px;
-    color: #A55278;
+    color: #282d31;
+    font-weight: 500;
 }
 
 .services-container {
@@ -61,7 +62,7 @@
 }
 
 .service:hover{
-    background-color: #A55278;
+    background-color: #282d31;
 }
 
 .service:hover h2{

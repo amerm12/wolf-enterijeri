@@ -15,6 +15,22 @@ function Projects() {
         navigate('/project-details', { state: { projectID } });
     }
 
+    function scrollLeft() {
+        const scrollContainer = document.querySelector(".allProjects");
+        scrollContainer.scrollBy({
+            left: -1000,
+            behavior: "smooth",
+        });
+    }
+
+    function scrollRight(){
+        const scrollContainer = document.querySelector(".allProjects");
+        scrollContainer.scrollBy({
+            left: 1000,
+            behavior: "smooth",
+        });
+    }
+
     return(
         <div className = "projects">
             <h1 className = "projects-title">Projekti</h1>
@@ -24,62 +40,47 @@ function Projects() {
                 U nastavku možete pronaći pregled nekih od naših nedavnih projekata, koji odslikavaju našu 
                 predanost kvalitetu i estetici.
             </p>
-            <Project
-                image={mainImg}
-                title="Projekt 1"
-                type="Kuća"
-                location="Sarajevo"
-                date="2023"
-                viewDetails={() => viewDetails("proj1")}
-            />
 
-            <Project
-                image={mainImg2}
-                title="Projekt 2"
-                type="Kuća"
-                location="Tuzla"
-                date="2023"
-                viewDetails={() => viewDetails("proj2")}
-            />
+            <div className = "projectsContainer">
+                <button class="scroll-btn left" onClick={scrollLeft}>&lt;</button>
+                <div className = "allProjects">
+                <Project
+                    image={mainImg}
+                    viewDetails={() => viewDetails("proj1")}
+                />
 
-            <Project 
-                image = {mainImg3}
-                title = "Projekt 3"
-                type = "Villa"
-                location = "Sarajevo"
-                date = "2023"
-                viewDetails={() => viewDetails("proj3")}
-            />
+                <Project
+                    image={mainImg2}
+                    viewDetails={() => viewDetails("proj2")}
+                />
 
-            <Project 
-                image = {mainImg4}
-                title = "Projekt 4"
-                type = "Stan"
-                location = "Sarajevo"
-                date = "2023"
-                viewDetails={() => viewDetails("proj4")}
-            />
+                <Project 
+                    image = {mainImg3}
+                    viewDetails={() => viewDetails("proj3")}
+                />
 
-            <Project 
-                image = {mainImg5}
-                title = "Projekt 5"
-                type = "Hotel"
-                location = "Sarajevo"
-                date = "2023"
-                viewDetails={() => viewDetails("proj5")}
-            />
+                <Project
+                    image={mainImg4}
+                    viewDetails={() => viewDetails("proj4")}
+                />
 
-            <Project 
-                image = {mainImg6}
-                title = "Projekt 6"
-                type = "Stan"
-                location = "Sarajevo"
-                date = "2023"
-                viewDetails={() => viewDetails("proj6")}
-            />
+                <Project
+                    image={mainImg5}
+                    viewDetails={() => viewDetails("proj5")}
+                />
 
-            <button className = "see-other" onClick={() => viewDetails("other")}>Pogledaj Ostale Projekte</button>
-
+                <Project
+                    image={mainImg6}
+                    viewDetails={() => viewDetails("proj6")}
+                />       
+            </div>
+                <button class="scroll-btn right" onClick={scrollRight}>&gt;</button>
+            </div>
+            
+            
+            {/* 
+                 <button className = "see-other" onClick={() => viewDetails("other")}>Pogledaj Ostale Projekte</button>
+            */}
             
         </div>
     );

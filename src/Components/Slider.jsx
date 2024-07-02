@@ -25,7 +25,7 @@ const Slider = () => {
          {slideImages.map((slideImage, index)=> (
             <div key={index}>
               <div className = "slider-image" style={{ 'backgroundImage': `url(${slideImage.url})` }}>
-                    <h2>Dobrodošli u Wolf Enterijeri</h2>
+                    <h2>Wolf Enterijeri</h2>
                     <p>Otkrijte naše jedinstvene kreacije i transformišite <br/>svoj dom u simbol stila i udobnosti.</p>
               </div>
             </div>

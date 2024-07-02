@@ -31,7 +31,7 @@
 .footer h2{
     font-size: 1.7rem;
     font-family: "Libre Baskerville", sans-serif;
-    color: #A55278;
+    color: white;
     padding-bottom: 20px;
 }
 
@@ -41,7 +41,8 @@
 }
 
 .fb-icon:hover{
-    color:#A55278;
+    /*color:#808080;*/
+    color: #cacaca;
 }
 
 .footer-right{
