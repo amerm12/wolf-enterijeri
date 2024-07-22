@@ -14,12 +14,12 @@ function Services(){
             <h1>Naše Usluge</h1>
 
             <div className="services-container">
-                <Service icon = { faHandshake } title = "Dogovor sa Kupcem" paragraph = "Pružamo sveobuhvatan pregled vaših potreba i želja kako bismo ispunili očekivanjima." />
-                <Service icon = { faTape } title = "Terensko Mjerenje" paragraph = "Precizno mjerimo prostor kako bismo osigurali optimalno prilagođen dizajn vašeg interijera." />
-                <Service icon = { faPalette } title = "Savjetovanje za Dizajn" paragraph = "Pružamo stručne savjete i ideje za dizajn koji odražava vaš stil i estetske preferencije." />
-                <Service icon = { faHammer } title = "Izrada" paragraph = "Naš tim majstora vješto izrađuje svaki komad namještaja i dekoraciju prema vašim specifikacijama." />
-                <Service icon = { faCouch } title = "Montaža" paragraph = "Osiguravamo preciznu montažu svih elemenata vašeg interijera kako bi se postigao besprijekoran izgled." />
-                <Service icon = { faCircleCheck } title = "Završni Radovi" paragraph = "Posvećeni smo detaljima i kvalitetnoj završnoj obradi svakog projekta kako bi se postigao izvanredan rezultat." />
+                <Service icon = { faHandshake } title = "Dogovor sa Kupcem" />
+                <Service icon = { faTape } title = "Terensko Mjerenje" />
+                <Service icon = { faPalette } title = "Savjetovanje za Dizajn" />
+                <Service icon = { faHammer } title = "Izrada" />
+                <Service icon = { faCouch } title = "Montaža" />
+                <Service icon = { faCircleCheck } title = "Završni Radovi" />
             </div>
         </div>
     );

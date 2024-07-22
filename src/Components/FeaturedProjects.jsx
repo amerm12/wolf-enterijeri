@@ -1,7 +1,7 @@
 import React from 'react';
 import './FeaturedProjects.css';
 import FeaturedProject from './FeaturedProject';
-import projectOneImg from '../assets/projekt3/mainImg3.jpg';
+import projectOneImg from '../assets/projekt2/mainImg2.jpg';
 import projectTwoImg from '../assets/projekt4/mainImg4.jpg';
 import projectThreeImg from '../assets/projekt5/mainImg5.jpg';
 
@@ -12,17 +12,17 @@ function featuredProjects(){
             <div className = "featured-projects-container">
             <FeaturedProject
                 imageSrc={projectOneImg}
-                imageAlt="projekt 1"
-                projectID = "proj3"
+                imageAlt="Istaknuti Projekat"
+                projectID = "proj2"
             />
             <FeaturedProject
                 imageSrc={projectTwoImg}
-                imageAlt="projekt 2"
+                imageAlt="Istaknuti Projekat"
                 projectID = "proj4"
             />
             <FeaturedProject
                 imageSrc={projectThreeImg}
-                imageAlt="projekt 3"
+                imageAlt="Istaknuti Projekat"
                 projectID = "proj5"
             />
             </div>

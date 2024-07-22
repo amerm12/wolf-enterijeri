@@ -1,12 +1,18 @@
 import { useNavigate } from 'react-router-dom';
 import Project from '../Components/Project';
 import '../Components/Project.css';
-import mainImg from '../assets/projekt1/mainImg.jpg';
+import mainImg1 from '../assets/projekt1/mainImg1.jpg';
 import mainImg2 from '../assets/projekt2/mainImg2.jpg';
 import mainImg3 from '../assets/projekt3/mainImg3.jpg';
 import mainImg4 from '../assets/projekt4/mainImg4.jpg';
 import mainImg5 from '../assets/projekt5/mainImg5.jpg';
 import mainImg6 from '../assets/projekt6/mainImg6.jpg';
+import mainImg7 from '../assets/projekt7/mainImg7.jpg';
+import mainImg8 from '../assets/otherProjects/mainImg8.jpg';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 function Projects() {
 
@@ -33,8 +39,8 @@ function Projects() {
 
     return(
         <div className = "projects">
-            <h1 className = "projects-title">Projekti</h1>
-            <p className = "projects-paragraph">Dobrodošli na stranicu projekata Wolf Enterijeri, gdje možete istražiti naše najnovije
+            <h1>Projekti</h1>
+            <p>Dobrodošli na stranicu projekata Wolf Enterijeri, gdje možete istražiti naše najnovije
                 i najinspirativnije radove. Naša strast za dizajn enterijera i inovativnim pristupom svakom
                 projektu rezultira stvaranjem prostora koji zadovoljavaju i nadmašuju očekivanja naših klijenata.
                 U nastavku možete pronaći pregled nekih od naših nedavnih projekata, koji odslikavaju našu 
@@ -42,10 +48,15 @@ function Projects() {
             </p>
 
             <div className = "projectsContainer">
-                <button class="scroll-btn left" onClick={scrollLeft}>&lt;</button>
+                <FontAwesomeIcon 
+                    icon={faChevronLeft} 
+                    className="scroll-btn left" 
+                    onClick={scrollLeft} 
+                />
+
                 <div className = "allProjects">
                 <Project
-                    image={mainImg}
+                    image={mainImg1}
                     viewDetails={() => viewDetails("proj1")}
                 />
 
@@ -72,15 +83,27 @@ function Projects() {
                 <Project
                     image={mainImg6}
                     viewDetails={() => viewDetails("proj6")}
-                />       
-            </div>
-                <button class="scroll-btn right" onClick={scrollRight}>&gt;</button>
+                />
+
+                <Project
+                    image={mainImg7}
+                    viewDetails={() => viewDetails("proj7")}
+                />
+
+                <Project
+                    image={mainImg8}
+                    viewDetails={() => viewDetails("other")}
+                />
+     
             </div>
             
-            
-            {/* 
-                 <button className = "see-other" onClick={() => viewDetails("other")}>Pogledaj Ostale Projekte</button>
-            */}
+            <FontAwesomeIcon 
+                icon={faChevronRight}
+                className = "scroll-btn right" 
+                onClick ={scrollRight}
+            />
+                
+            </div>
             
         </div>
     );

@@ -1,6 +1,6 @@
 .header {
   background-color: #121213;
-  height: 120px;
+  height: 100px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -26,17 +26,16 @@
   list-style-type: none;
   color: white;
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
   
 .navigation li {
-  /*font-family: "Libre Baskerville", serif;*/
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
 }
 
 .navigation ul li a {
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-decoration: none;
   color: white;
   transition: color 0.3s ease;
@@ -108,8 +107,8 @@
 
 .overlay li a{
   color: white;
-  font-family: "Libre Baskerville", serif;
-  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
   text-decoration: none;
 }
 
@@ -118,32 +117,13 @@
   cursor: pointer;
 }
 
-@media(min-width: 1401px) and (max-width: 1700px){
-  .header li a{
-    font-size: 2rem;
-  }
-  .logo img{
-    width: 120%;
-  }
-}
-
-@media(min-width: 1201px) and (max-width: 1400px){
-  .header li a{
-    font-size: 1.8rem;
-  }
-
-  .logo img{
-    width: 110%;
-  }
-}
-
-@media(min-width: 993px) and (max-width: 1200px){
+@media(max-width: 1700px){
   .header{
-    height: 110px;
+    height: 90px;
   }
 
-  .header li a{
-    font-size: 1.6rem;
+  .navigation ul li a{
+    font-size: 1.8rem;
   }
 
   .logo img{
@@ -151,17 +131,63 @@
   }
 }
 
-@media(min-width: 577px) and (max-width: 992px){
+@media(max-width: 1400px){
   .header{
-    height: 100px;
+    height: 80px;
   }
 
-  .header li a{
+  .navigation ul li a{
     font-size: 1.6rem;
   }
 
   .logo img{
-    width: 110%;
+    width: 90%;
+  }
+}
+
+@media(max-width: 1200px){
+  .header{
+    height: 75px;
+  }
+
+  .navigation ul li a{
+    font-size: 1.4rem;
+  }
+
+  .logo img{
+    width: 80%;
+  }
+}
+
+@media(max-width: 992px){
+  .header{
+    height: 70px;
+  }
+
+  .navigation ul li a{
+    font-size: 1.2rem;
+  }
+
+  .logo img{
+    width: 65%;
+  }
+
+  .navigation ul{
+    gap: 15px;
+  }
+}
+
+@media(max-width: 768px){
+  .header{
+    height: 70px;
+  }
+
+  .navigation ul li a{
+    font-size: 1.6rem;
+  }
+
+  .logo img{
+    width: 65%;
   }
 
   .navigation ul {
@@ -173,13 +199,13 @@
   } 
 
   .overlay ul a{
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
-@media (min-width: 391px) and (max-width: 576px){
+@media(max-width: 576px){
   .header{
-    height: 90px;
+    height: 70px;
   }
 
   .navigation ul {
@@ -187,17 +213,21 @@
   }
 
   .logo img{
-    width: 90%;
+    width: 65%;
   }
 
   .menu-button {
     display: block;
   } 
+
+  .overlay ul a{
+    font-size: 1.9rem;
+  }
 }
 
 @media (max-width: 390px){
   .header{
-    height: 90px;
+    height: 70px;
   }
   
   .navigation ul {
@@ -205,10 +235,14 @@
   }
 
   .logo img{
-    width: 80%;
+    width: 65%;
   }
 
   .menu-button {
     display: block;
   } 
+
+  .overlay ul a{
+    font-size: 1.8rem;
+  }
 }

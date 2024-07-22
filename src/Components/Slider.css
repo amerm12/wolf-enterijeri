@@ -12,7 +12,6 @@
   color: white;
   font-size: 3rem;
   margin-top: 120px;
-  /*font-weight: bolder;*/
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   margin-right: auto;
@@ -37,11 +36,11 @@
   }
 
   .slider-image h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .slider-image p{
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -51,33 +50,33 @@
   }
 
   .slider-image h2{
-    font-size: 2.3rem;
+    font-size: 1.8rem;
   }
 
   .slider-image p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
 @media (min-width: 993px) and (max-width: 1200px){
   .slider-image{
-    height: 550px;
+    height: 500px;
   }
 
   .slider-image h2{
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-top: 100px;
     padding-bottom: 8px;
   }
 
   .slider-image p{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
 
 @media (min-width: 769px) and (max-width: 992px){
   .slider-image{
-    height: 500px;
+    height: 400px;
   }
 
   .slider-image h2{
@@ -92,7 +91,7 @@
 
 @media (min-width: 577px) and (max-width: 768px){
   .slider-image{
-    height: 400px;
+    height: 350px;
   }
 
   .slider-image h2{
@@ -114,13 +113,13 @@
   }
 
   .slider-image h2{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-top: 50px;
     margin-left: 10%;
   }
 
   .slider-image p{
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     margin-left: 10%;
   }
 }
@@ -131,14 +130,14 @@
   }
 
   .slider-image h2{
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 40px;
     margin-left: 10%;
-    padding-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   .slider-image p{
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     margin-left: 10%;
   }
 }
