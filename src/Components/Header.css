@@ -97,6 +97,7 @@
 
 .overlay ul{
   display: block;
+  padding: 0;
 }
 
 .overlay li{
