@@ -1,10 +1,9 @@
 /*-----Featured products styling-----*/
 .featured-projects{
-   height: 500px;
+   height: 650px;
    background-color: #282d31;
    padding-top: 50px;
    padding-bottom: 50px;
-   padding-top: 30px;
 }
 
 .featured-projects h1{
@@ -14,7 +13,7 @@
    color: white;
    border-left: 1px solid white;
    padding-left: 20px;
-   font-size: 3rem;
+   font-size: 2rem;
    padding-top: 10px;
    padding-bottom: 10px;
    margin-bottom: 40px;
@@ -30,7 +29,7 @@
 
 /*-----Single project styling-----*/
 .featured-project{
-   height: 450px;
+   height: 500px;
    width: 20vw;
    position: relative;
 }
@@ -82,6 +81,8 @@
  @media(max-width: 1700px){
    .featured-projects{
       height: 500px;
+      padding-top: 30px;
+      padding-bottom: 30px;
    }
 
    .featured-project{
@@ -125,6 +126,7 @@
       padding-top: 7px;
       padding-bottom: 7px;
    }
+
    .featured-project{
       height: 280px;
    }
@@ -151,8 +153,6 @@
 
    .featured-projects h1{
       font-size: 1.3rem;
-      padding-top: 7px;
-      padding-bottom: 7px;
    }
 
    .featured-project{
@@ -169,66 +169,27 @@
  }
 
  @media(max-width: 768px){
-   .featured-projects-container{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-left: 0;
-      margin-right: 0;
-   }
-
    .featured-projects{
       height: 1050px;
-      padding-top: 30px;
-   }
-
-   .featured-projects h1{
-      font-size: 1.3rem;   
-      padding-top: 7px;
-      padding-bottom: 7px;
    }
 
    .featured-project{
-      height: 300px;
-      width: 50vw;
-      padding: 0;
-      margin: 0;
       margin-bottom: 30px;
-   }
-
-   .text{
-      font-size: 1.1rem;
    }
  }
 
  @media(max-width: 576px){
-   .featured-projects-container{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-left: 0;
-      margin-right: 0;
-   }
-
    .featured-projects{
       height: 1050px;
-      padding-top: 30px;
    }
 
    .featured-projects h1{
       font-size: 1.2rem;  
-      padding-top: 7px;
-      padding-bottom: 7px; 
       padding-left: 15px;
    }
 
    .featured-project{
-      height: 300px;
       width: 60vw;
-      padding: 0;
-      margin: 0;
       margin-bottom: 30px;
    }
 
@@ -238,15 +199,6 @@
  }
 
  @media (max-width: 390px){
-   .featured-projects-container{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-left: 0;
-      margin-right: 0;
-   }
-
    .featured-projects{
       height: 900px;
       padding-top: 30px;
@@ -256,19 +208,12 @@
 
    .featured-projects h1{
       font-size: 1.1rem;  
-      padding-left: 15px; 
       margin-bottom: 20px;
    }
 
    .featured-project{
       height: 250px;
       width: 70vw;
-      padding: 0;
-      margin: 0;
       margin-bottom: 20px;
-   }
-
-   .text{
-      font-size: 1rem;
    }
  }
