@@ -8,7 +8,7 @@ import ProjectDetails from '../pages/ProjectDetails';
 import Footer from './Footer';
 
 function App() {
-  return (
+  return( 
       <div>
         <Header />
         <Routes>
@@ -20,7 +20,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
-  );
+  )
 }
 
 export default App;
