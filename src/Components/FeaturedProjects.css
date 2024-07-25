@@ -200,7 +200,7 @@
 
  @media (max-width: 390px){
    .featured-projects{
-      height: 900px;
+      height: 750px;
       padding-top: 30px;
       padding-top: 7px;
       padding-bottom: 7px;
@@ -212,8 +212,7 @@
    }
 
    .featured-project{
-      height: 250px;
-      width: 70vw;
+      height: 200px;
       margin-bottom: 20px;
    }
  }

@@ -3,7 +3,6 @@ import Slider from '../Components/Slider';
 import FeaturedProjects from '../Components/FeaturedProjects';
 import Services from '../Components/Services';
 
-
 function Home(){
     return(
         <div>

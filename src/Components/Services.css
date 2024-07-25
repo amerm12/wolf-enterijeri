@@ -194,7 +194,7 @@
 
 @media(max-width: 390px){
     .services{
-        height: 450px;
+        height: 400px;
     }
 
     .services h1{
@@ -205,6 +205,7 @@
     .services-container {
         grid-template-rows: 50px 50px 50px 50px 50px 50px;
         grid-template-columns: 1fr;
+        gap: 10px;
     }
 
     .icon{

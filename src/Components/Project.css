@@ -171,7 +171,7 @@
 
     .project{
         height: 230px;
-        min-width: 22vw;
+        min-width: 200px;
     }
     
     .scroll-btn{
@@ -180,13 +180,59 @@
 }
 
 @media(max-width: 768px){
+    .projects{
+        padding-bottom: 25px;
+    }
 
+    .projects h1{
+        font-size: 1.3rem;
+    }
+
+    .projects p{
+        font-size: 0.9rem;
+    }
+
+    .project{
+        height: 200px;
+        min-width: 160px;
+    }
+
+    .scroll-btn{
+        font-size: 1.6rem;
+    }
 }
 
 @media(max-width:576px){
+    .projects h1{
+        font-size: 1.3rem;
+        margin-top: 0;
+    }
 
+    .projects p{
+        font-size: 0.8rem;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .project{
+        height: 150px;
+        min-width: 130px;
+    }
 }
 
 @media(max-width: 390px){
-    
+    .projects p{
+        font-size: 0.7rem;
+        line-height: 25px;
+    }
+
+    .project{
+        height: 130px;
+        min-width: 100px;
+    }
+
+    .projects{
+        padding-bottom: 15px;
+    }
 }

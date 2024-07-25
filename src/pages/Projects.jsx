@@ -9,7 +9,6 @@ import mainImg5 from '../assets/projekt5/mainImg5.jpg';
 import mainImg6 from '../assets/projekt6/mainImg6.jpg';
 import mainImg7 from '../assets/projekt7/mainImg7.jpg';
 import mainImg8 from '../assets/otherProjects/mainImg8.jpg';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
